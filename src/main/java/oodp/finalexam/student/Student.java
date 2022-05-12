@@ -4,31 +4,38 @@ package oodp.finalexam.student;
 
 public class Student {
 	private String name;
-    private String id;
-    private int year;
-    private double GPA;
-    
-  
-    public Student(String name, String id, int year, double GPA) {
-    	//TODO: create constructor which accept parameter as name, id, year, and GPA, respectively
-        
-        
-    }
-    
-   //TODO: complete  tostring() method which should return, 
-   //for example "Student ID:[001], name:[Anna], year:[1] ,GPA:[3.0]"
-    public String toString() {
-        return null;
-          
-    }    
-    
-   
+	private String id;
+	private int year;
+	private double GPA;
+
+
+	public Student(String name, String id, int year, double GPA) {
+		//TODO: create constructor which accept parameter as name, id, year, and GPA, respectively
+
+		this.name = name;
+		this.id = id;
+		this.year = year;
+		this.GPA = GPA;
+
+
+	}
+
+	//TODO: complete  tostring() method which should return,
+	//for example "Student ID:[001], name:[Anna], year:[1] ,GPA:[3.0]"
+	public String toString() {
+
+		//"Student ID:004, name:David, year:4 ,GPA:3.05"
+		return "Student ID:"+this.id+", name:"+this.name+", year:"+this.year+" ,GPA:"+this.GPA+"";
+
+	}
+
+
 	public boolean isMoreGPA(Student other) {
-        return GPA > other.GPA;
-    }
-    
-  
-    public String getName() {
+		return GPA > other.GPA;
+	}
+
+
+	public String getName() {
 		return name;
 	}
 

@@ -1,6 +1,10 @@
 package oopd.finalexam.myException;
 
-public class CreditCardException {
-	
-	
+public class CreditCardException extends Exception {
+    public CreditCardException(String mes)
+    {
+        super(mes);
+    }
+
+
 }
